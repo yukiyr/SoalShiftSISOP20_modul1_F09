@@ -34,10 +34,15 @@ Surabaya
 **Soal**
 
 1.	Whits adalah seorang mahasiswa teknik informatika. Dia mendapatkan tugas praktikum untuk membuat laporan berdasarkan data yang ada pada file “Sample-Superstore.csv”. Namun dia tidak dapat menyelesaikan tugas tersebut. Laporan yang diminta berupa :
+
 a.	Tentukan wilayah bagian (region) mana yang memiliki keuntungan (profit) paling sedikit
+
 b.	Tampilkan 2 negara bagian (state) yang memiliki keuntungan (profit) paling sedikit berdasarkan hasil poin a
+
 c.	Tampilkan 10 produk (product name) yang memiliki keuntungan (profit) paling sedikit berdasarkan 2 negara bagian (state) hasil poin b
+
 Whits memohon kepada kalian yang sudah jago mengolah data untuk mengerjakan laporan tersebut.
+
 *Gunakan Awk dan Command pendukung
 
 **Jawaban :**
@@ -65,6 +70,10 @@ awk -F, '{print $1 $2 $3} NR==2 {exit}' output4.sh
 awk -F, 'NR > 1 && $11 == "Texas" {arr[$17]+=$21} END {for (i in arr) {print arr[i],i}}' Sample-Superstore.csv > output5.sh
 awk -F' ' '{ print }' output5.sh | LC_ALL=C sort -g > output6.sh
 awk -F, '{ print } NR==10 {exit}' output6.sh
+
+awk -F, 'NR > 1 && $11 == "Illinois" {arr[$17]+=$21} END {for (i in arr) {print arr[i],i}}' Sample-Superstore.csv > output7.sh
+awk -F' ' '{ print }' output7.sh | LC_ALL=C sort -g > output8.sh
+awk -F, '{ print } NR==10 {exit}' output8.sh
 ```
 
 **Kendala Yang Dialami**
@@ -83,6 +92,71 @@ HINT: enkripsi yang digunakan adalah caesar cipher.
 **Jawaban :**
 
 **Cara Pengerjaan**
+
+**Membuat Password**
+
+```
+#!/bin/bash
+
+length=28
+digits=({0..9})
+lower=({a..z})
+upper=({A..Z})
+CharArray=(${digits[*]} ${lower[*]} ${upper[*]})
+ArrayLength=${#CharArray[*]}
+password=""
+for i in `seq 1 $length`
+do        
+        index=$(($RANDOM%$ArrayLength))    
+        char=${CharArray[$index]}        
+        password=${password}${char}
+done 
+
+fname=$1
+
+echo $password > "$fname.txt"
+```
+
+**Enkripsi**
+
+```
+#!/bin/bash
+
+jam="$( date +"%H" )"
+
+alpha=({a..z})
+encrypt=( "${alpha[@]:(-(26-$jam))}" )
+encrypt+=( "${alpha[@]:0:$jam}" )
+
+alpha1=({A..Z})
+encrypt1=( "${alpha1[@]:(-(26-$jam))}" )
+encrypt1+=( "${alpha1[@]:0:$jam}" )
+
+variab=$1
+
+echo "$variab" | tr "${alpha[*]}" "${encrypt[*]}"| tr "${alpha1[*]}" "${encrypt1[*]}" > encryptt.txt
+value=$(<encryptt.txt)
+mv "$variab.txt" "$value.txt"
+```
+
+**Dekripsi**
+
+```
+#!/bin/bash
+
+hurufkecil=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+hurufbesar=(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+
+hour=$1
+jam="$( date +"%H" )"
+
+bawah=${hurufkecil[$jam]}
+atas=${hurufbesar[$jam]}
+
+echo "$hour" | tr "[$bawah-za-$bawah]" '[a-z]' | tr "[$atas-ZA-$atas]" '[A-Z]' > decryptt.txt
+value=$(<decryptt.txt)
+mv "$hour.txt" "$value.txt"
+```
 
 **Kendala Yang Dialami**
 
