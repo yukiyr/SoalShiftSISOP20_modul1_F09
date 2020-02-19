@@ -44,6 +44,29 @@ Whits memohon kepada kalian yang sudah jago mengolah data untuk mengerjakan lapo
 
 **Cara Pengerjaan**
 
+1. a
+
+```
+awk -F, 'NR > 1 {arr[$13]+=$21} END {for (i in arr) {print arr[i],i}}' Sample-Superstore.csv > output.sh
+awk -F' ' '{printf "%-12s %-12s\n", $1, $2}' output.sh | LC_ALL=C sort -g > output1.sh
+awk -F, '{print $1 " " $2} NR==1 {exit}' output1.sh
+```
+
+1. b
+
+```
+awk -F, 'NR > 1 && $13 == "Central" {arr[$11]+=$21} END {for (i in arr) {print arr[i],i}}' Sample-Superstore.csv > output3.sh
+awk -F' ' '{printf "%-12s %-12s %-12s\n", $1, $2, $3}' output3.sh | LC_ALL=C sort -g > output4.sh
+awk -F, '{print $1 $2 $3} NR==2 {exit}' output4.sh
+```
+1. c
+
+```
+awk -F, 'NR > 1 && $11 == "Texas" {arr[$17]+=$21} END {for (i in arr) {print arr[i],i}}' Sample-Superstore.csv > output5.sh
+awk -F' ' '{ print }' output5.sh | LC_ALL=C sort -g > output6.sh
+awk -F, '{ print } NR==10 {exit}' output6.sh
+```
+
 **Kendala Yang Dialami**
 
 **Screenshot**
