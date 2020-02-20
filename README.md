@@ -170,6 +170,18 @@ mv "$hour.txt" "$value.txt"
 **Jawaban :**
 
 **Cara Pengerjaan**
+**3a**
+```
+for ((i=1 ; $i<=28 ; i++))
+do
+	wget "https://loremflickr.com/320/240/cat" -a "wget.log" -O "pdkt_kusuma_$i"
+done
+```
+**3b**
+```
+5 6-23/8 * * 0-5 /home/rafif/rafif/modul1/soal3a.sh
+```
+**3a**
 
 **Kendala Yang Dialami**
 
