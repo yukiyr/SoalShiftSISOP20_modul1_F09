@@ -170,6 +170,7 @@ mv "$hour.txt" "$value.txt"
 **Jawaban :**
 
 **Cara Pengerjaan**
+
 **3a**
 ```
 for ((i=1 ; $i<=28 ; i++))
@@ -181,7 +182,7 @@ done
 ```
 5 6-23/8 * * 0-5 /home/rafif/rafif/modul1/soal3a.sh
 ```
-**3a**
+**3c**
 
 **Kendala Yang Dialami**
 
