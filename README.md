@@ -173,7 +173,7 @@ mv "$hour.txt" "$value.txt"
 
 **3a**
 ```
-for ((i=1 ; $i<=28 ; i++))
+for ((i=1 ; $i -le 28 ; i++))
 do
 	wget "https://loremflickr.com/320/240/cat" -a "wget.log" -O "pdkt_kusuma_$i"
 done
