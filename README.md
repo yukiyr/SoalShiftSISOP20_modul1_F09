@@ -78,6 +78,8 @@ awk -F, '{ print } NR==10 {exit}' output8.sh
 
 **Kendala Yang Dialami**
 
+-
+
 **Screenshot**
 
 1. a
@@ -174,6 +176,8 @@ mv "$hour.txt" "$value.txt"
 ```
 
 **Kendala Yang Dialami**
+
+Setelah masuk tr command, variabel abjad yang didefinisikan di awal tidak dimulai dari indeks 0 sehingga perlu ditambahkan menjadi "aabcdefghijklmnopqrstuvwxyz" agar membacanya dari huruf a.
 
 **Screenshot**
 
