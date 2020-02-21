@@ -216,8 +216,10 @@ done
 **3c**
 
 **Kendala Yang Dialami**
-
 Tidak bisa mengerjakan nomor 3c
 
 **Screenshot**
 
+3.
+
+![Screenshot3](https://1.bp.blogspot.com/-SkGEGXdxy2I/Xk-1nauDfAI/AAAAAAAAAx4/tBM0UFendKot8CJnVsFUudJLonJ_PC6BgCLcBGAsYHQ/s1600/image.png)
