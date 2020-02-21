@@ -216,5 +216,7 @@ done
 **3c**
 
 **Kendala Yang Dialami**
+Tidak bisa mengerjakan nomor 3c
 
 **Screenshot**
+
