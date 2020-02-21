@@ -19,7 +19,7 @@ Rafif Ridho
 
 Ibrahim Tamtama Adi
 
-5116100018
+5111640000018
 
 Departemen Teknik Infomatika
 
