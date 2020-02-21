@@ -80,6 +80,18 @@ awk -F, '{ print } NR==10 {exit}' output8.sh
 
 **Screenshot**
 
+1. a
+
+![Screenshot1a](https://1.bp.blogspot.com/-Vs33eY70f4Y/Xk9lTyPdvqI/AAAAAAAAAxE/2rPfe6E4PBoFY0LbXzSEP3Uv7yHPV8UoQCLcBGAsYHQ/s1600/Screenshot%2Bfrom%2B2020-02-21%2B11-54-11.png)
+
+1. b
+
+![Screenshot1b](https://1.bp.blogspot.com/-fDGEBuQvgZY/Xk9lYkYUIKI/AAAAAAAAAxI/I9RZlDJ0haM04Cywd1qPQ6Dgh-1N4gCqgCLcBGAsYHQ/s1600/Screenshot%2Bfrom%2B2020-02-21%2B11-54-20.png)
+
+1. c
+
+![Screenshot1c](https://1.bp.blogspot.com/-3299B5NwpKk/Xk9ldsHvhfI/AAAAAAAAAxM/411iDkKOYFYF3IDlrWebX3NC4CcFDM3ngCLcBGAsYHQ/s1600/Screenshot%2Bfrom%2B2020-02-21%2B11-54-28.png)
+
 **Soal**
 
 2.	Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilangan data-data penting. Untuk mencegah kejadian yang sama terulang kembali mereka meminta bantuan kepada Whits karena dia adalah seorang yang punya banyak ide. Whits memikirkan sebuah ide namun dia meminta bantuan kalian kembali agar ide tersebut cepat diselesaikan. Idenya adalah kalian (a) membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka. (b) Password acak tersebut disimpan pada file berekstensi
@@ -161,6 +173,18 @@ mv "$hour.txt" "$value.txt"
 **Kendala Yang Dialami**
 
 **Screenshot**
+
+2. a
+
+![Screenshot2a](https://1.bp.blogspot.com/-uNx_k_aK7p8/Xk9u6DJNPCI/AAAAAAAAAxc/HbkdMu5WGbAz_kaCmKGfRzQ1JaLxAYktgCLcBGAsYHQ/s1600/Screenshot%2Bfrom%2B2020-02-21%2B12-44-59.png)
+
+2. b
+
+![Screenshot2a1](https://1.bp.blogspot.com/-ipN1GYKDJEA/Xk9u-L2L-uI/AAAAAAAAAxg/s_NhnE4e-1AW2NogBTgU3VN35JFpvsvZACLcBGAsYHQ/s1600/Screenshot%2Bfrom%2B2020-02-21%2B12-45-29.png)
+
+2. c
+
+![Screenshot2a1](https://1.bp.blogspot.com/-QDt2XCI4MxQ/Xk9vCH6yuBI/AAAAAAAAAxk/9crKvVy5cCcOI4E2XRScXNxQV9hSzKzpwCLcBGAsYHQ/s1600/Screenshot%2Bfrom%2B2020-02-21%2B12-46-57.png)
 
 **Soal**
 
