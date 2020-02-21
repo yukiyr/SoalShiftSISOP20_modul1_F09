@@ -23,7 +23,7 @@ Ibrahim Tamtama Adi
 
 Departemen Teknik Infomatika
 
-Fakultas Teknologi Informasi dan Komunikasi
+Fakultas Teknologi Elektro dan Informatika Cerdas
 
 Institut Teknologi Sepuluh Nopember (ITS)
 
