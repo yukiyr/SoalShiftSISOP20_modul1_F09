@@ -1,6 +1,8 @@
-$1/bin/bash
-
-for ((i=1 ; $i<=28 ;  i++))
+#!/bin/bash
+i=0
+while [ $i -lt 28 ]
 do
-wget "https://loremflickr.com/320/240/cat" -a "wget.log" -O "pdkt_kusuma_$i"
+let a=$i+1
+wget "https://loremflickr.com/320/240/cat" -a "wget.log" -O "pdkt_kusuma_$a"
+let i=$i+1
 done
